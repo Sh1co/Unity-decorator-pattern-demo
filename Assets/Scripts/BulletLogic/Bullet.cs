@@ -9,6 +9,11 @@ public class Bullet : MonoBehaviour
     public Vector3 Direction;
 
 
+    private void Start()
+    {
+        Debug.Log("Shot " + BulletType.GetName());
+    }
+
     private void Update()
     {
         transform.Translate(Direction * BulletType.GetSpeed() * Time.deltaTime);

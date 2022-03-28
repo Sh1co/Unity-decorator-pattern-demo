@@ -9,4 +9,9 @@
     {
         return 5.0f;
     }
+
+    public string GetName()
+    {
+        return "BaseBullet";
+    }
 }

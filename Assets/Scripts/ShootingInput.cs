@@ -26,7 +26,7 @@ public class ShootingInput : MonoBehaviour
     private void ShootBullet(IBulletType bulletType)
     {
         var mousePos = Input.mousePosition;
-        var ray = Camera.main.ScreenPointToRay(mousePos);
+        var ray = Camera.main!.ScreenPointToRay(mousePos);
         var bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
         bullet.BulletType = bulletType;
         bullet.Direction = ray.direction;

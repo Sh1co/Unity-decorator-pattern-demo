@@ -9,13 +9,18 @@
         _temp = bulletType;
     }
     
-    public float GetSpeed()
+    public override float GetSpeed()
     {
-        return _temp.GetSpeed() * 1.5f;
+        return _temp.GetSpeed() * 2.5f;
     }
 
-    public float GetLifeTime()
+    public override float GetLifeTime()
     {
-        return _temp.GetLifeTime() * 2.0f;
+        return _temp.GetLifeTime() * 3.0f;
+    }
+    
+    public override string GetName()
+    {
+        return _temp.GetName() + "With sniper mod";
     }
 }

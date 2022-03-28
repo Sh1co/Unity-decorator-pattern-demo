@@ -7,13 +7,18 @@
         _temp = bulletType;
     }
     
-    public float GetSpeed()
+    public virtual float GetSpeed()
     {
         return _temp.GetSpeed();
     }
 
-    public float GetLifeTime()
+    public virtual float GetLifeTime()
     {
         return _temp.GetLifeTime();
+    }
+
+    public virtual string GetName()
+    {
+        return _temp.GetName();
     }
 }
